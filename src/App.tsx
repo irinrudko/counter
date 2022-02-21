@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Counter } from './counter/Counter';
-import { v1 } from 'uuid';
-
+import { Counter } from './Counter/Counter';
 
 const App = () => {
 

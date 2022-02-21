@@ -1,5 +1,6 @@
 import React from 'react';
-import style from './counter.module.css';
+import { Button } from '../Buttons/Button';
+import style from './Counter.module.css';
 
 export type CounterType = {
     value: number
@@ -18,8 +19,11 @@ export const Counter: React.FC<CounterType> = ({ value, maxNum, buttonStatus1, b
             <div className={style.counter}>
                 <h1 className={`${ifMaxNum} ${style.head}`}>{value}</h1>
                 <div className={style.body}>
-                    <button disabled={buttonStatus1} onClick={resetHandler} className={style.button}>reset</button>
-                    <button disabled={buttonStatus2} onClick={incHandler} className={style.button}>inc</button>
+                    <Button
+                        buttonStatus1={buttonStatus1}
+                        buttonStatus2={buttonStatus2}
+                        incHandler={incHandler}
+                        resetHandler={resetHandler} />
                 </div>
             </div>
         </div>

@@ -7,8 +7,8 @@ type DefaultButtonPropsType = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonE
 type CounterType = DefaultButtonPropsType & {
     buttonStatus1: boolean
     buttonStatus2: boolean
-    incHandler: () => any
-    resetHandler: () => any
+    incHandler: () => void
+    resetHandler: () => void
 }
 
 
